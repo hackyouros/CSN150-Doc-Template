@@ -1,5 +1,5 @@
 # Cybersecurity : CSN150
-Project: ESP32 XXXXXXXX
+Project: ESP32-Cam Access Point
 
 ## Purpose
 Set up ESP32 and Arduino enviornment. Execute sketch " Wifiscanner". 
@@ -9,26 +9,28 @@ Set up ESP32 and Arduino enviornment. Execute sketch " Wifiscanner".
 
 * [USB Micro Data Cable](https://www.amazon.com/AmazonBasics-Male-Micro-Cable-Black/dp/B0711PVX6Z/ref=sr_1_1_sspa?keywords=micro+usb+data+cable&qid=1678902214&sprefix=Micro+USB+data+%2Caps%2C89&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFaU0NaUVZHU1RFUlAmZW5jcnlwdGVkSWQ9QTA3NTA4MDVFVERCS01HVlgxM1YmZW5jcnlwdGVkQWRJZD1BMDE4NTE1NTIwWUdONkdWSzU1M1Amd2lkZ2V0TmFtZT1zcF9hdGYmYWN0aW9uPWNsaWNrUmVkaXJlY3QmZG9Ob3RMb2dDbGljaz10cnVl)
 
+* Computer
+
 ## Links to documentation and tools
 
-##### Video 1: 
-
-##### Other Links: 
-
-##### AI GPTs used
-
 ## Steps I followed
-1. Write the steps you followed here.  This way you can keep track of where you might have messed up if the project does not work. 
+1. I followed the [documentation](https://randomnerdtutorials.com/esp32-cam-access-point-ap-web-server/)
+2. Connected the ESP32 to my computer.
+3. Started Arduino IDE.
+4. Opened up the CameraWebServer Project example
+5. Modified the default by adding "WiFi.softAP(ssid, password);" which allowed it to be an AP. 
+6. Customised it with my own personnal ssid & password 
+7. Uploaded the sketch to the board
+8. Connected from pc to the board
 
 ## Problems and Solutions
-Note your problems or errors here.  Google any error you may come across, and not what you tried (even if it does not work), and what was the final answer. Document your errors and solutions that worked for you.  
-
-**Problem:** E (485) camera: Camera probe failed with error 0x105(ESP_ERR_NOT_FOUND)
-Camera init failed with error 0x105
-**Solution:**
-
-### Example Problem
-**Problem:** Arduino code will not load on ESP32 Cam.
-**Solution:** Camera drivers were incorrect I needed to install the driver: [https://www.wch-ic.com/downloads/CH341SER_ZIP.html](https://github.com/martin-ger/esp32_nat_router).  I used file, "CH341SER.ZIP" and it worked.
+* Problem: No internet connection. 
+* Solution: This is normal since the esp32 is acting as an AP & doesn't send http requests.
 
 ## Final Report
+In this project, I was able to set up the esp32 as an access point & allowed me to connect my devices directly to it.
+
+## Screenshots
+<img width="1920" height="1080" alt="Screenshot (18)" src="https://github.com/user-attachments/assets/1a1614d1-518c-4d43-97a5-d108e97afccb" />
+<img width="1920" height="1080" alt="Screenshot (19)" src="https://github.com/user-attachments/assets/e35bd79d-4123-40b1-afa0-ed188d92db64" />
+<img width="1920" height="1080" alt="Screenshot (20)" src="https://github.com/user-attachments/assets/8cdb24ee-f426-48dd-9f9e-2235733ad3ba" />
