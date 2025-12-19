@@ -60,8 +60,10 @@ Send some phishing emails & explore how phishers do it.
 This project demonstrates how to use Gophish, an open-source phishing framework, to simulate phishing attacks for educational purposes. The objective was to showcase how phishing campaigns can be carried out, with a focus on raising awareness about social engineering tactics and improving security practices.
 
 ## Screenshots
-<img width="1920" height="870" alt="Screenshot (24)" src="https://github.com/user-attachments/assets/f562896b-4e41-4727-b7ff-a236cf2258b3" />
-<img width="1920" height="1080" alt="Screenshot (26)" src="https://github.com/user-attachments/assets/f87c289c-b796-44e8-a631-bfe631a777db" />
-<img width="1920" height="907" alt="Screenshot (27)" src="https://github.com/user-attachments/assets/c6ba11b9-9499-4039-a496-f4b6b47079f5" />
+This is the fake email. Looks legit but is not. It shows how easy these tools can make phishing & how legit they can look↓↓↓↓<img width="1920" height="870" alt="Screenshot (24)" src="https://github.com/user-attachments/assets/f562896b-4e41-4727-b7ff-a236cf2258b3" />
+
+This is confirming the email work & is ready for phishing↓↓↓↓<img width="1920" height="1080" alt="Screenshot (26)" src="https://github.com/user-attachments/assets/f87c289c-b796-44e8-a631-bfe631a777db" />
+
+This is testing your email to make sure it works↓↓↓↓<img width="1920" height="907" alt="Screenshot (27)" src="https://github.com/user-attachments/assets/c6ba11b9-9499-4039-a496-f4b6b47079f5" />
 
 This is the page they'd land on after clicking any links in the email↓↓↓↓<img width="1920" height="908" alt="Screenshot (31)" src="https://github.com/user-attachments/assets/7d8632fb-cc84-480f-aae8-053504ef7f66" />
