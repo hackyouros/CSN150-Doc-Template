@@ -1,36 +1,67 @@
 # Cybersecurity : CSN150
-Project: ESP32-Cam Access Point
+Project: Gophish
 
 ## Purpose
-Set up ESP32 and Arduino enviornment. Execute sketch " Wifiscanner". 
+Send some phishing emails & explore how phishers do it. 
 
 ## Equipment
-* [ESP32Cam](https://www.amazon.com/Aideepen-ESP32-CAM-Bluetooth-ESP32-CAM-MB-Arduino/dp/B08P2578LV/ref=sr_1_3?crid=4FY0ECFW0ZX7&keywords=ESP32+Cam&qid=1678902050&sprefix=esp32+cam%2Caps%2C240&sr=8-3)
-
-* [USB Micro Data Cable](https://www.amazon.com/AmazonBasics-Male-Micro-Cable-Black/dp/B0711PVX6Z/ref=sr_1_1_sspa?keywords=micro+usb+data+cable&qid=1678902214&sprefix=Micro+USB+data+%2Caps%2C89&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFaU0NaUVZHU1RFUlAmZW5jcnlwdGVkSWQ9QTA3NTA4MDVFVERCS01HVlgxM1YmZW5jcnlwdGVkQWRJZD1BMDE4NTE1NTIwWUdONkdWSzU1M1Amd2lkZ2V0TmFtZT1zcF9hdGYmYWN0aW9uPWNsaWNrUmVkaXJlY3QmZG9Ob3RMb2dDbGljaz10cnVl)
-
 * Computer
+* Gophish
+* Email account
 
 ## Links to documentation and tools
+* [Gophish](https://getgophish.com/)
+* [GitHub link for Gophish (Latest version as of 12/18/2025)](https://github.com/gophish/gophish/releases/tag/v0.12.1)
 
-## Steps I followed
-1. I followed the [documentation](https://randomnerdtutorials.com/esp32-cam-access-point-ap-web-server/)
-2. Connected the ESP32 to my computer.
-3. Started Arduino IDE.
-4. Opened up the CameraWebServer Project example
-5. Modified the default by adding "WiFi.softAP(ssid, password);" which allowed it to be an AP. 
-6. Customised it with my own personnal ssid & password 
-7. Uploaded the sketch to the board
-8. Connected from pc to the board
+# Steps for using Gophish to send phishing emails
+1. **Download Gophish**
+   - Visit the official [Gophish GitHub page](https://github.com/gophish/gophish) or the [official website](https://getgophish.com/) to download the latest version of Gophish.
+   - Choose the appropriate version for your operating system (Windows, macOS, or Linux).
+
+2. **Extract the Gophish Files**
+   - After downloading, extract the compressed file (usually a `.zip` or `.tar.gz`).
+
+4. **Navigate to the Gophish Folder**
+   - Open your terminal or command prompt and navigate to the extracted Gophish directory.
+
+5. **Start the Gophish Server**
+   - Run the command to start the Gophish server
+
+6. **Access the Admin Panel**
+   - Open your browser and navigate to `http://127.0.0.1:3333` or the address provided.
+
+7. **Configure Gophish**
+   - Once logged in, configure the Gophish server settings, such as SMTP server settings for sending emails and other parameters.
+   - Update your SMTP settings to use a mail server that allows you to send emails from Gophish.
+
+8. **Create a New Phishing Campaign**
+   - In the admin panel, go to the “Campaigns” section and click on “New Campaign.”
+   - Fill in the details, including email templates, landing pages, and targets.
+
+9. **Design Email Templates**
+   - Create realistic email templates for your phishing campaign (e.g., a cloned email from a legitimate source).
+   - You can use the built-in email template editor or upload HTML files for the email content.
+
+10. **Create Landing Pages**
+    - Design or clone a phishing landing page that will be presented to users who click the email link.
+    - Customize the page with necessary form fields (e.g., login page for phishing) and other elements.
+
+11. **Set Up Targets**
+    - Add the email addresses of the targets to the campaign.
+
+12. **Launch the Campaign**
+    - Once all settings are configured, launch the campaign.
+    - Monitor the campaign’s performance and track results in the Gophish dashboard.
 
 ## Problems and Solutions
-* Problem: No internet connection. 
-* Solution: This is normal since the esp32 is acting as an AP & doesn't send http requests.
+* No problems.
 
 ## Final Report
-In this project, I was able to set up the esp32 as an access point & allowed me to connect my devices directly to it.
+This project demonstrates how to use Gophish, an open-source phishing framework, to simulate phishing attacks for educational purposes. The objective was to showcase how phishing campaigns can be carried out, with a focus on raising awareness about social engineering tactics and improving security practices.
 
 ## Screenshots
-<img width="1920" height="1080" alt="Screenshot (18)" src="https://github.com/user-attachments/assets/1a1614d1-518c-4d43-97a5-d108e97afccb" />
-<img width="1920" height="1080" alt="Screenshot (19)" src="https://github.com/user-attachments/assets/e35bd79d-4123-40b1-afa0-ed188d92db64" />
-<img width="1920" height="1080" alt="Screenshot (20)" src="https://github.com/user-attachments/assets/8cdb24ee-f426-48dd-9f9e-2235733ad3ba" />
+<img width="1920" height="870" alt="Screenshot (24)" src="https://github.com/user-attachments/assets/f562896b-4e41-4727-b7ff-a236cf2258b3" />
+<img width="1920" height="1080" alt="Screenshot (26)" src="https://github.com/user-attachments/assets/f87c289c-b796-44e8-a631-bfe631a777db" />
+<img width="1920" height="907" alt="Screenshot (27)" src="https://github.com/user-attachments/assets/c6ba11b9-9499-4039-a496-f4b6b47079f5" />
+
+This is the page they'd land on after clicking any links in the email↓↓↓↓<img width="1920" height="908" alt="Screenshot (31)" src="https://github.com/user-attachments/assets/7d8632fb-cc84-480f-aae8-053504ef7f66" />
